@@ -87,7 +87,6 @@ const handleKeydown = (event) => {
   const targetTab = enabledTabs[newIndex]
   setActiveTab(targetTab.slug)
 
-  // Фокус на новостворену активну кнопку
   setTimeout(() => {
     const btn = tablistRef.value?.querySelector(`[data-slug="${targetTab.slug}"]`)
     if (btn) btn.focus()
@@ -166,7 +165,6 @@ const handleKeydown = (event) => {
     }
   }
 
-  /* Варіант: underline */
   &--underline {
     .tabs__tab--active {
       color: #2563eb;
@@ -174,7 +172,6 @@ const handleKeydown = (event) => {
     }
   }
 
-  /* Варіант: pills */
   &--pills {
     .tabs__list {
       border-bottom: none;
@@ -194,7 +191,6 @@ const handleKeydown = (event) => {
     }
   }
 
-  /* Варіант: boxed */
   &--boxed {
     .tabs__list {
       border-bottom: 1px solid #cbd5e1;
